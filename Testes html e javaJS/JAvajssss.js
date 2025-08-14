@@ -1,4 +1,5 @@
-function adicionar(valor) {
+    /* CALCULADORAAAAAAAAAAAAAAAAAAA (Até linha 25) */
+    function adicionar(valor) {
     document.getElementById('tela').value += valor;
     
 }
@@ -20,8 +21,7 @@ function calcular() {
    } 
    catch (e){
     alert("Expressao inválida");
-   }
-    
+   }    
 }
 
 
@@ -96,24 +96,41 @@ function cont() {
       */
  }
 function Words() {
-
     let string= prompt(" Write an word:");
-    alert(`A palavra tem ${string.length} letras`) + "\n"+
+
+    alert(`A palavra tem ${string.length} letras`) + "\n" +
 
     (string.length>=5 ? alert("A palavra é grande") : alert("A palavra é pequena"));
 
 }
-
-
-
  let number =0;
  while(number<=10){
    console.log(`${number}`);
    number++;
  }
+function Key(){
+ let tabuada= parseInt(prompt("Digite um número para sabermos sua tabuada:"));
+ for(let i=0; i<=10;i++){
+  let ress= tabuada*i;
+  console.log("\n" + ` ${ress} `); 
+ }
 
+ }
+ function Textss() {
+   let pegarelemento = document.getElementById("text");
+   let pegarpegarelemento= pegarelemento.value;
+   alert ( ` A sua palavra ${pegarpegarelemento} tem letras ${pegarpegarelemento.length}` ) 
+   /*
+   if (pegarpegarelemento.length <=7) {
+    alert(`A palavra ${pegarpegarelemento} é pequena pois tem ${pegarpegarelemento.length} letras`);   
+   } else {
+    alert(`A palavra ${pegarpegarelemento} é grande pois tem ${pegarpegarelemento.length} letras`)    
+   }
+    */
 
+   (pegarpegarelemento.length <=7 ? alert("A palavra " + `${pegarpegarelemento}` + " é pequena" ) : alert("A palavra " + `${pegarpegarelemento}` + " é grande "));
+   
+ }
 
-
-  
  
+  
